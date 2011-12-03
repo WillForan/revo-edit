@@ -1,0 +1,27 @@
+settings->about phone:
+   VS910 4G
+   android 2.2.2
+   VS910ZV4
+
+to use android debug bridge:
+    settings->applications->Unknown Sources
+    settings->applications->Development-> USB debugging
+    settings->connectivity->Default connection mode->internet
+
+to root:
+  root/root.sh
+
+
+
+   
+clockwork mod recovery:
+   wipe all cache/wipe all data = unrooted V4 rom?
+
+
+run root.sh in Root/
+    root and install superuser
+
+run changeBootloader in bootloader 
+   revert to stock bootloader
+
+settings->privacy->reset
