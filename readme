@@ -7,21 +7,47 @@ to use android debug bridge:
     settings->applications->Unknown Sources
     settings->applications->Development-> USB debugging
     settings->connectivity->Default connection mode->internet
-
-to root:
-  root/root.sh
+    settings->wireless&..->Mobile network settings->Select system->LTE/CDMA
 
 
-
-   
-clockwork mod recovery:
-   wipe all cache/wipe all data = unrooted V4 rom?
-
-
-run root.sh in Root/
+root/root.sh
     root and install superuser
+    run script from root/ 
 
-run changeBootloader in bootloader 
-   revert to stock bootloader
+bootloader/changeBootloader.sh
+    change bootloader to clockwork mod
+    run script from bootloader/ 
+    **CHECK md5sum**
+       or use RevoToolkit to check before rebooting
+   
+images/uploadStock.sh
+    push stock_revo to sdcard so it can be seen by clockwork mod recovery
 
-settings->privacy->reset
+clockwork mod recovery:
+   wipe all cache/wipe all data or settings->privacy->reset (unnecessary?) 
+   restore->stock_revo
+   
+
+root/root.sh again
+
+
+bootloader/changeBootloader.sh again
+   but with BL = stock bootloader
+   **CHECK sums or use RevoToolkit**
+
+root/unroot.sh
+   remove root
+
+
+Get OTA (Over The Air?) updates
+    settings->About Phone->Software Updates->Check
+
+
+
+root/root.sh again
+bootloader/changeBootloader.sh again
+upload Gingervolt image
+"restore" to Gingervolt
+
+
+
